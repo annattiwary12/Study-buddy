@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "study-buddy-frontend",
   "version": "0.1.0",
   "private": true,
@@ -45,5 +46,19 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1"
+=======
+  "name": "study-buddy",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000t\u0000u\u0000d\u0000y\u0000 \u0000B\u0000u\u0000d\u0000d\u0000y\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "study-buddy": "file:"
+>>>>>>> f47d031b8384ebb35e92adc5b948ad0c4de79739
   }
 }
