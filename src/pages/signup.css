@@ -1,0 +1,12 @@
+
+.signup-page .signup-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-page .signup-button {
+    background-color: #4299e1;
+  }
+  

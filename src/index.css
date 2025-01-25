@@ -1,0 +1,89 @@
+/* Base styles (light mode) */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --button-bg-color: #4CAF50;
+  --link-color: #0069d9;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: white;
+  --button-bg-color: #6200ea;
+  --link-color: #ff4081;
+}
+
+/* Body and general page layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: var(--button-bg-color);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: #333;
+  color: #f5f5f5;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--link-color);
+}
+
+/* Additional styling for Home page */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+h1, p {
+  color: var(--text-color);
+}
+
+/* Input and form styling */
+input, button {
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #bbb;
+}

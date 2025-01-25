@@ -1,0 +1,273 @@
+/* Reset Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home Container */
+.home-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling due to video */
+}
+
+/* Background Video */
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the screen */
+  z-index: -1; /* Sends video behind the content */
+  filter: brightness(0.6); /* Slightly darken video for text readability */
+}
+
+/* Overlay Content */
+.home-content {
+  position: relative;
+  z-index: 10; /* Ensures content stays above the video */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #ffffff; /* White text for contrast */
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+/* Heading Styles */
+.home-content h1 {
+  font-size: 3rem; /* Default large font size */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add subtle text shadow */
+}
+
+/* Paragraph Styles */
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px; /* Limit paragraph width for readability */
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Text shadow for contrast */
+}
+
+/* Button Styles */
+.home-button {
+  padding: 12px 24px;
+  background-color: #2563eb; /* Vibrant blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.home-button:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .home-content p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+/* Home.css */
+
+/* Ensure the video covers the entire background */
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video scales proportionally */
+  z-index: -1; /* Places the video behind the content */
+}
+
+.relative {
+  position: relative;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+}
+
+.bg-gray-800 {
+  background-color: #2d3748; /* Dark gray background */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray-700 {
+  color: #4a5568; /* Medium gray text color */
+}
+
+.text-gray-800 {
+  color: #2d3748; /* Darker gray text color */
+}
+
+.text-green-500 {
+  color: #38a169; /* Green text for success messages */
+}
+
+.text-red-500 {
+  color: #e53e3e; /* Red text for error messages */
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-300 {
+  border-color: #d2d6dc;
+}
+
+.bg-blue-500 {
+  background-color: #4299e1;
+}
+
+.bg-blue-600:hover {
+  background-color: #3182ce;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.signup-container {
+  position: relative;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place the video behind other content */
+}
+
+/* Home.css */
+form {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for a frosted glass look */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h2 {
+  color: #ffffff; /* Make the text stand out on the blurred background */
+}
+
+input, button {
+  background: rgba(255, 255, 255, 0.8); /* Slightly opaque for better visibility */
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  
+  border-radius: 8px;
+}
+
+button {
+  color: #ffffff;
+  background-color: #1d4ed8; /* Blue button */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+.text-blue-500:hover {
+  color: #2563eb; /* Highlight the "Forgot Password" and "Sign Up" links */
+  text-decoration: underline;
+}
